@@ -82,19 +82,21 @@ public class DepositoCombustible {
 	* <hr>
 	* 
 	* @param amount 	Cantidad de combustible que añade
+ * @return 
 	* 
 	*/
-    public void fill(double amount){
-       depNivel = depNivel + amount;
+    public double fill(double amount){
+       return depNivel = depNivel + amount;
     }
 
    /**
 	* consumir es un método que efectua cambios reduciendo el combustible del depósito
 	* 
     * @param amount cantidad de fuel consumida
+ * @return 
     * 
     */
-	public void consumir(double amount){
-       depNivel = depNivel - amount;
+	public double consumir(double amount){
+       return depNivel = depNivel - amount;
     }
 }
